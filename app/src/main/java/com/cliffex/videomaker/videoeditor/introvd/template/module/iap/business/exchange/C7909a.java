@@ -72,7 +72,7 @@ public class C7909a {
             ((View) this.dSk.get()).getViewTreeObserver().addOnGlobalLayoutListener(this.dSm);
             return;
         }
-        throw new IllegalArgumentException(String.format("Activity %s should have windowSoftInputMode=\"adjustResize\"to make KeyboardWatcher working. You can set it in AndroidManifest.xml", new Object[]{((Activity) this.activityRef.get()).getClass().getSimpleName()}));
+        throw new IllegalArgumentException(String.format("Activity %s should have windowSoftInputMode=\"adjustResize\"to make KeyboardWatcher working. You can set it in AppAndroidManifest.xml", new Object[]{((Activity) this.activityRef.get()).getClass().getSimpleName()}));
     }
 
     /* renamed from: a */
