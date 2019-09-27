@@ -1,4 +1,4 @@
-package com.introvd.base.fulrryconfig;
+package com.cliffex.videomaker.videoeditor.introvd.base.fulrryconfig;
 
 import android.app.Activity;
 import android.view.View;
@@ -8,7 +8,7 @@ import com.introvd.base.utlisads.CrashAll;
 
 public class ActionAds {
     public static void ActionAds(final Activity activity) {
-        ((ImageButton) activity.findViewById(ToolsAll.findViewId(activity, "btnAds"))).setOnClickListener(new OnClickListener() {
+        ((ImageButton) activity.findViewById(com.introvd.base.fulrryconfig.ToolsAll.findViewId(activity, "btnAds"))).setOnClickListener(new OnClickListener() {
             public void onClick(View v) {
                 CrashAll.loadAndshow(activity, "las_gift");
             }
@@ -16,9 +16,9 @@ public class ActionAds {
     }
 
     public static void ActionMoreApps(final Activity activity) {
-        ((ImageButton) activity.findViewById(ToolsAll.findViewId(activity, "btnMoreApp"))).setOnClickListener(new OnClickListener() {
+        ((ImageButton) activity.findViewById(com.introvd.base.fulrryconfig.ToolsAll.findViewId(activity, "btnMoreApp"))).setOnClickListener(new OnClickListener() {
             public void onClick(View v) {
-                RemotesMoreApp.showMoreApp(activity);
+                com.introvd.base.fulrryconfig.RemotesMoreApp.showMoreApp(activity);
             }
         });
     }

@@ -1,4 +1,4 @@
-package com.aiii.android.arouter.facade.model;
+package com.cliffex.videomaker.videoeditor.aiii.android.arouter.facade.model;
 
 import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;

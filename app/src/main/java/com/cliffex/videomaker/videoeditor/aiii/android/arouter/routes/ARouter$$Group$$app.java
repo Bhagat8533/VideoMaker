@@ -1,8 +1,9 @@
-package com.aiii.android.arouter.routes;
+package com.cliffex.videomaker.videoeditor.aiii.android.arouter.routes;
 
-import com.aiii.android.arouter.facade.model.RouteMeta;
+
 import com.aiii.android.arouter.facade.p096c.C1945a;
 import com.aiii.android.arouter.facade.template.C1951e;
+import com.cliffex.videomaker.videoeditor.aiii.android.arouter.facade.model.RouteMeta;
 import com.introvd.template.app.AppApplicationLifeCycleImpl;
 import com.introvd.template.app.AppListener;
 import com.introvd.template.app.AppMainActivityLifeCycleImpl;

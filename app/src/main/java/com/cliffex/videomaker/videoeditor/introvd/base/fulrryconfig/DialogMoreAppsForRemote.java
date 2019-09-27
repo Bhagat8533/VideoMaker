@@ -1,4 +1,4 @@
-package com.introvd.base.fulrryconfig;
+package com.cliffex.videomaker.videoeditor.introvd.base.fulrryconfig;
 
 import android.app.Activity;
 import android.app.Dialog;
@@ -10,7 +10,8 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import com.squareup.picasso.Picasso;
-
+import  com.introvd.base.fulrryconfig.MoreApp;
+import com.introvd.base.fulrryconfig.ToolsAll;
 public class DialogMoreAppsForRemote extends Dialog implements OnClickListener {
     private Button btn_ad_call_to_action;
     private ImageView btn_close_ads;
@@ -18,7 +19,7 @@ public class DialogMoreAppsForRemote extends Dialog implements OnClickListener {
     private ImageView imv_cover;
     /* access modifiers changed from: private */
     public Activity mContext;
-    MoreApp moreApp;
+    com.introvd.base.fulrryconfig.MoreApp moreApp;
     private TextView txt_shortdes_app;
     private TextView txt_title_app;
 
@@ -32,7 +33,7 @@ public class DialogMoreAppsForRemote extends Dialog implements OnClickListener {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         requestWindowFeature(1);
-        setContentView(ToolsAll.getIdLayout(this.mContext, "dialog_popup_more_apps_remote"));
+        setContentView(com.introvd.base.fulrryconfig.ToolsAll.getIdLayout(this.mContext, "dialog_popup_more_apps_remote"));
         getWindow().setLayout(-1, -2);
         getWindow().setBackgroundDrawable(new ColorDrawable(0));
         this.txt_title_app = (TextView) findViewById(ToolsAll.findViewId(this.mContext, "txt_title_app"));

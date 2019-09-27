@@ -1,10 +1,12 @@
-package com.aiii.android.arouter.core;
+package com.cliffex.videomaker.videoeditor.aiii.android.arouter.core;
 
-import com.aiii.android.arouter.facade.model.RouteMeta;
+
 import com.aiii.android.arouter.facade.template.C1949c;
 import com.aiii.android.arouter.facade.template.C1951e;
 import com.aiii.android.arouter.facade.template.IInterceptor;
 import com.aiii.android.arouter.p089a.C1915a;
+import com.cliffex.videomaker.videoeditor.aiii.android.arouter.facade.model.RouteMeta;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;

@@ -1,14 +1,17 @@
-package com.aiii.android.arouter.facade;
+package com.cliffex.videomaker.videoeditor.aiii.android.arouter.facade;
 
 import android.app.Activity;
 import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Parcelable;
-import com.aiii.android.arouter.facade.model.RouteMeta;
+
 import com.aiii.android.arouter.facade.p095b.C1944b;
 import com.aiii.android.arouter.facade.template.C1949c;
-import com.aiii.android.arouter.p091c.C1919a;
+
+import com.cliffex.videomaker.videoeditor.aiii.android.arouter.facade.model.RouteMeta;
+import com.cliffex.videomaker.videoeditor.aiii.android.arouter.p091c.C1919a;
+
 import java.io.Serializable;
 import java.util.ArrayList;
 

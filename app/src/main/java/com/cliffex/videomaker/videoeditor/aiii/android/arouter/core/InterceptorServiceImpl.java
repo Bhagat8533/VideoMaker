@@ -1,4 +1,4 @@
-package com.aiii.android.arouter.core;
+package com.cliffex.videomaker.videoeditor.aiii.android.arouter.core;
 
 import android.content.Context;
 import com.aiii.android.arouter.facade.C1941a;
@@ -8,8 +8,9 @@ import com.aiii.android.arouter.facade.service.InterceptorService;
 import com.aiii.android.arouter.facade.template.IInterceptor;
 import com.aiii.android.arouter.p090b.C1916a;
 import com.aiii.android.arouter.p091c.C1919a;
-import com.aiii.android.arouter.p092d.C1930a;
+
 import com.aiii.android.arouter.p093e.C1938c;
+import com.cliffex.videomaker.videoeditor.aiii.android.arouter.p092d.C1930a;
 import com.ironsource.sdk.constants.Constants.RequestParameters;
 import java.util.Map.Entry;
 import java.util.concurrent.TimeUnit;

@@ -1,9 +1,11 @@
-package com.aiii.android.arouter.facade.model;
+package com.cliffex.videomaker.videoeditor.aiii.android.arouter.facade.model;
+
+import android.renderscript.Element;
 
 import com.aiii.android.arouter.facade.p094a.C1942a;
 import com.aiii.android.arouter.facade.p096c.C1945a;
 import java.util.Map;
-import javax.lang.model.element.Element;
+//import javax.lang.model.element;
 
 public class RouteMeta {
     private Class<?> destination;

@@ -1,11 +1,14 @@
-package com.aiii.android.arouter.core;
+package com.cliffex.videomaker.videoeditor.aiii.android.arouter.core;
 
 import android.content.Context;
-import com.aiii.android.arouter.facade.C1941a;
-import com.aiii.android.arouter.facade.model.RouteMeta;
+
+
 import com.aiii.android.arouter.facade.p096c.C1946b;
 import com.aiii.android.arouter.p091c.C1919a;
 import com.aiii.android.arouter.p093e.C1940e;
+import com.cliffex.videomaker.videoeditor.aiii.android.arouter.facade.C1941a;
+import com.cliffex.videomaker.videoeditor.aiii.android.arouter.facade.model.RouteMeta;
+
 import java.util.concurrent.ThreadPoolExecutor;
 
 /* renamed from: com.aiii.android.arouter.core.a */

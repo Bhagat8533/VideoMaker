@@ -1,4 +1,4 @@
-package com.aiii.android.arouter.core;
+package com.cliffex.videomaker.videoeditor.aiii.android.arouter.core;
 
 import android.content.Context;
 import android.util.LruCache;

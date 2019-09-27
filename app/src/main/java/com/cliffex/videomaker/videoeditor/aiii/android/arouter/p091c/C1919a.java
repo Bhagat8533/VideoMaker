@@ -1,8 +1,8 @@
-package com.aiii.android.arouter.p091c;
+package com.cliffex.videomaker.videoeditor.aiii.android.arouter.p091c;
 
 import android.app.Application;
 import android.content.Context;
-import com.aiii.android.arouter.facade.C1941a;
+
 import com.aiii.android.arouter.facade.p095b.C1944b;
 import com.aiii.android.arouter.facade.template.C1948b;
 import com.aiii.android.arouter.p090b.C1917b;
@@ -19,8 +19,8 @@ public final class C1919a {
     /* renamed from: a */
     public static void m5528a(Application application) {
         if (!atB) {
-            atC = C1920b.atC;
-            C1920b.atC.mo10378h("ARouter::", "ARouter init start.");
+            atC = com.aiii.android.arouter.p091c.C1920b.atC;
+            com.aiii.android.arouter.p091c.C1920b.atC.mo10378h("ARouter::", "ARouter init start.");
             atB = C1920b.m5539b(application);
             if (atB) {
                 C1920b.m5544sh();

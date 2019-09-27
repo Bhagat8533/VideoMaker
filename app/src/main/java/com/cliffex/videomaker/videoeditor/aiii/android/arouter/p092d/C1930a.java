@@ -1,4 +1,4 @@
-package com.aiii.android.arouter.p092d;
+package com.cliffex.videomaker.videoeditor.aiii.android.arouter.p092d;
 
 import java.util.concurrent.CountDownLatch;
 

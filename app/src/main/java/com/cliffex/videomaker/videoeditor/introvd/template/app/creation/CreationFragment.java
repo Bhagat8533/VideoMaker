@@ -105,7 +105,7 @@ public class CreationFragment extends FragmentBase {
     /* access modifiers changed from: private */
     public long bor = 0;
     C4047b bos = null;
-    C3821d bot = null;
+ C3821d bot = null;
     /* access modifiers changed from: private */
     public BadgeHelper bou;
     /* access modifiers changed from: private */

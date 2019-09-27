@@ -7,7 +7,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Handler;
 import android.os.Looper;
-import android.support.p021v4.app.ActivityCompat;
+
 import android.widget.Toast;
 import com.aiii.android.arouter.core.C1927a;
 import com.aiii.android.arouter.facade.C1941a;
