@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:installLocation="auto"
+    android:compileSdkVersion="23" android:compileSdkVersionCodename="6.0-2438415"
+    package="com.cliffex.videomaker" android:platformBuildVersionCode="23" android:platformBuildVersionName="6.0-2438415">
+    <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="28"/>
+    <supports-screens android:largeScreens="true"/>
+    <uses-permission android:name="com.vivavideo.mobile.settings.READ"/>
+    <uses-permission android:name="com.diii.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="com.diii.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_ADDED"/>
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_CHANGED"/>
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_INSTALL"/>
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_REPLACED"/>
+    <uses-permission android:name="android.permission.RESTART_PACKAGES"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <permission android:name="videoeditor.videomaker.slowmotions.starsleap.permission.JPUSH_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="videoeditor.videomaker.slowmotions.starsleap.permission.JPUSH_MESSAGE"/>
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <application android:theme="@style/kq" android:label="@string/xiaoying_str_com_app_name" android:icon="@mipmap/ic_launcher" android:name="com.introvd.template.VivaBaseApplication" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" android:allowBackup="true" android:largeHeap="true" android:supportsRtl="true" android:fullBackupContent="@xml/a" android:resizeableActivity="false" android:roundIcon="@mipmap/ic_launcher_round" android:appComponentFactory="android.support.v4.app.CoreComponentFactory">
+        <activity android:theme="@style/kr" android:name="com.introvd.template.app.splash.SplashActivity" android:exported="true" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="xiaoying"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="xiaoyinglinkedme"/>
+            </intent-filter>
+            <meta-data android:name="entry" android:value="0"/>
+            <meta-data android:name="linkedme.sdk.auto_link_keys" android:value="linkedme"/>
+        </activity>
+        <activity android:name="com.introvd.template.starvlogs.checking.MyChecking" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.introvd.template.starvlogs.checking.ErrorActivity" android:screenOrientation="portrait"/>
+        <service android:name="com.introvd.template.app.manager.MyInstanceIdService" android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+        <meta-data android:name="XYPIN.key" android:value="@string/xypin_publish_id"/>
+        <meta-data android:name="publisher_id" android:value="@integer/q"/>
+        <meta-data android:name="android.max_aspect" android:value="2.1"/>
+        <meta-data android:name="android.notch_support" android:value="true"/>
+        <meta-data android:name="android.vivo_multidisplay_support" android:value="true"/>
+        <activity android:theme="@style/ks" android:name="com.introvd.template.XiaoYingActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenLayout|screenSize" android:windowSoftInputMode="adjustResize" android:hardwareAccelerated="true">
+            <intent-filter>
+                <action android:name="com.introvd.template.Gallery_MV_Laucher"/>
+                <action android:name="com.introvd.template.Camera_Laucher"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/jf" android:name="com.introvd.template.app.webview.CommonWebPage" android:screenOrientation="portrait"/>
+        <activity android:name="com.introvd.template.app.setting.SettingAboutActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.introvd.template.app.setting.sns.SettingBindSNSActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.introvd.template.app.setting.SettingNotificationActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.introvd.template.app.setting.sns.SettingBindInternationalSnsActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation"/>
+        <activity android:name="com.introvd.template.app.publish.ResultPageActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation"/>
+        <activity android:name="com.introvd.template.app.p199v5.videoexplore.VideoExploreActivity" android:screenOrientation="portrait" android:hardwareAccelerated="true"/>
+        <activity android:name="com.introvd.template.app.community.usergrade.UserGradePage" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/pi" android:name="com.introvd.template.app.community.usergrade.UserGradeUpActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.introvd.template.app.setting.locale.ChooseLanguageActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.introvd.template.app.activity.ExtraHelpActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.introvd.template.app.activity.DebugInfoActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.introvd.template.app.setting.SettingNetWorkActivity" android:screenOrientation="portrait"/>
+        <service android:name="com.introvd.template.app.utils.AppStateInitIntentService" android:exported="false"/>
+        <activity android:name="com.introvd.template.app.setting.AutoPlaySetting" android:screenOrientation="portrait"/>
+        <activity android:name="com.introvd.template.app.school.template.TemplateListAct" android:screenOrientation="portrait"/>
+        <activity android:name="com.introvd.template.app.community.freeze.FreezeReasonPage" android:screenOrientation="portrait"/>
+        <receiver android:name="com.introvd.template.app.notification.NotificationReceiver" android:exported="true"/>
+        <service android:label="Android Phone" android:name="com.introvd.template.app.test.TestService" android:exported="true"/>
+        <service android:name="com.introvd.template.datacenter.SocialService" android:exported="false">
+            <intent-filter>
+                <action android:name="socialservice.action.USER"/>
+                <action android:name="socialservice.action.VIDEO"/>
+                <action android:name="socialservice.action.MISC"/>
+                <action android:name="socialservice.action.CONTENTS"/>
+                <action android:name="socialservice.action.INTERACTION"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.introvd.template.datacenter.DownloadService" android:exported="false">
+            <intent-filter>
+                <action android:name="socialservice.action.DOWNLOAD"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.introvd.template.datacenter.TaskService" android:exported="false">
+            <intent-filter>
+                <action android:name="socialservice.action.TASK"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.baidu.location.f" android:enabled="true" android:process=":baidu"/>
+        <provider android:name="com.introvd.template.datacenter.SocialProvider" android:exported="false" android:multiprocess="false" android:authorities="videoeditor.videomaker.slowmotions.starsleap.datacenter"/>
+        <receiver android:name="com.introvd.template.app.receiver.MonitorBroadReceiver">
+            <intent-filter android:priority="1001">
+                <action android:name="android.intent.action.MEDIA_BAD_REMOVAL"/>
+                <action android:name="android.intent.action.MEDIA_UNMOUNTED"/>
+                <action android:name="android.intent.action.MEDIA_MOUNTED"/>
+                <action android:name="android.intent.action.MEDIA_EJECT"/>
+                <action android:name="android.intent.action.MEDIA_REMOVED"/>
+                <action android:name="android.intent.action.MEDIA_SHARED"/>
+                <data android:scheme="file"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="socialservice.action.DOWNLOAD.completed"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.introvd.template.app.alarm.AlarmReceiver" android:exported="false">
+            <intent-filter android:priority="1000">
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="com.diii.xiaoying.alarm.receive"/>
+                <action android:name="com.diii.xiaoying.alarm.click"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="linkedme.sdk.key" android:value="0"/>
+        <activity android:theme="@style/Theme.Translucent" android:label="@string/xiaoying_str_com_app_name" android:name="com.introvd.template.wxapi.WXEntryActivity" android:exported="true" android:launchMode="singleTop"/>
+        <meta-data android:name="io.fabric.auth.ApiKey" android:value="="/>
+        <meta-data android:name="io.fabric.auth.Secret" android:value="="/>
+        <activity android:theme="@style/Theme.Translucent.NoTitleBar" android:label="@string/xiaoying_str_com_app_name" android:name="com.eiii.FacebookActivity" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
+        <meta-data android:name="com.eiii.sdk.ApplicationId" android:value="@string/facebook_app_id_pro"/>
+        <meta-data android:name="com.facebook.accountkit.ApplicationName" android:value="@string/xiaoying_str_com_app_name"/>
+        <meta-data android:name="com.facebook.accountkit.ClientToken" android:value="@string/account_ket_client_token"/>
+        <provider android:name="com.eiii.FacebookContentProvider" android:exported="true" android:authorities="com.eiii.app.FacebookContentProvider1539178076322552"/>
+        <meta-data android:name="com.giii.aiii.biii.version" android:value="@integer/i"/>
+        <meta-data android:name="XiaoYing_Channel" android:value="XiaoYing"/>
+        <meta-data android:name="XiaoYing_AppKey" android:value="100282"/>
+        <meta-data android:name="BAD_Channel" android:value="googleplaypro"/>
+        <meta-data android:name="BAD_channelKey" android:value="GP"/>
+        <meta-data android:name="GA_TRACKER_ID" android:value="="/>
+        <meta-data android:name="appKey" android:value="@string/xyalt_app_id"/>
+        <meta-data android:name="exo_support_min_version" android:value="19"/>
+        <meta-data android:name="instagram_dialog_title" android:resource="@string/xiaoying_str_sns_gallery_longin_instagram"/>
+        <activity android:theme="@style/kr" android:name="com.introvd.template.app.activity.LoadResActivity" android:process=":mini" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.introvd.template.app.welcomepage.WelcomeV6Activity" android:screenOrientation="portrait"/>
+        <activity android:name="com.introvd.template.app.setting.SettingActivityV6" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/kr" android:name="com.introvd.template.app.splash.IntentHomeActivity" android:taskAffinity=".intent" android:screenOrientation="portrait" android:hardwareAccelerated="true">
+            <intent-filter>
+                <action android:name="com.introvd.template.intenthome"/>
+                <action android:name="action_launch_xiaoying_intenthome_mv"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="video/*"/>
+                <data android:mimeType="video/3gpp"/>
+                <data android:mimeType="video/mp4"/>
+                <data android:mimeType="video/m4v"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND_MULTIPLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="image/jpeg"/>
+                <data android:mimeType="image/png"/>
+                <data android:mimeType="image/bmp"/>
+                <data android:mimeType="image/x-ms-bmp"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="video/3gpp"/>
+                <data android:mimeType="video/mp4"/>
+                <data android:mimeType="video/m4v"/>
+                <data android:mimeType="video/*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.EDIT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="video/3gpp"/>
+                <data android:mimeType="video/mp4"/>
+                <data android:mimeType="video/m4v"/>
+                <data android:mimeType="video/*"/>
+            </intent-filter>
+        </activity>
+        <meta-data android:name="app_license" android:value="@string/xybai_ad_key"/>
+        <meta-data android:name="XYBAI.assets.fileName" android:value="json.txt"/>
+        <meta-data android:name="XYYEA.assets.id" android:value="62579623"/>
+        <meta-data android:name="CRYSTAL_ID" android:value="@string/xyint_id"/>
+        <activity android:name="com.introvd.template.app.setting.SettingLocaleConfigActivity"/>
+        <activity android:name="com.introvd.template.introduce.page.IntroduceActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.introvd.template.app.youngermode.XYyoungerSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/oc" android:name="com.introvd.template.app.school.template.detail.TemplateDetailAct" android:screenOrientation="portrait"/>
+        <activity android:name="com.introvd.template.app.school.view.SchoolCourseViewPagerAct" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/jf" android:name="com.introvd.template.editor.VideoEditorActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:theme="@style/jf" android:name="com.introvd.template.editor.fast.FastEditorActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:theme="@style/jf" android:name="com.introvd.template.editor.slideshow.SlideEditorActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:theme="@style/jf" android:name="com.introvd.template.editor.videotrim.VideoTrimActivity" android:exported="false" android:clearTaskOnLaunch="true" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenLayout|screenSize">
+            <intent-filter>
+                <action android:name="com.introvd.template.intent.action.FILEPICKER"/>
+                <action android:name="com.introvd.template.intent.action.EDITORFILEPICKER"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/jf" android:name="com.introvd.template.editor.effects.collage.LocalAlbumActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/jf" android:name="com.introvd.template.editor.clipedit.sort.EditorSortActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/jf" android:name="com.introvd.template.editor.gallery.GalleryActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@style/jf" android:name="com.introvd.template.editor.preview.EditorPreviewActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/jf" android:name="com.introvd.template.editor.export.IntlPublishActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenLayout|screenSize" android:windowSoftInputMode="adjustUnspecified|stateVisible|adjustPan"/>
+        <activity android:label="@string/xiaying_share_change_speed" android:icon="@mipmap/icon_viva_share_transform" android:name="com.introvd.template.editor.intent.VideoTransformPreActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="video/3gpp"/>
+                <data android:mimeType="video/mp4"/>
+                <data android:mimeType="video/m4v"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/jf" android:name="com.introvd.template.editor.pip.AdvancePIPClipDesigner" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:label="@string/xiaoing_share_video_meme" android:icon="@mipmap/icon_viva_share_meme" android:name="com.introvd.template.editor.intent.VideoMemePreActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="video/3gpp"/>
+                <data android:mimeType="video/mp4"/>
+                <data android:mimeType="video/m4v"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/xiaoying_share_quick_trim" android:icon="@mipmap/icon_viva_share_trim" android:name="com.introvd.template.editor.intent.VideoTrimPreActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="video/3gpp"/>
+                <data android:mimeType="video/mp4"/>
+                <data android:mimeType="video/m4v"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/jf" android:name="com.introvd.template.editor.preview.clipsort.ClipSortActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/jf" android:name="com.introvd.template.editor.advance.AdvanceEditorGif" android:exported="false" android:clearTaskOnLaunch="true" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:name="com.introvd.template.editor.slideshow.story.StoryEditActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustNothing"/>
+        <service android:name="com.introvd.template.sdk.slide.ProjectSaveService" android:exported="false">
+            <intent-filter>
+                <action android:name="slideshow.intent.action.prj.save.finish"/>
+                <action android:name="slideshow.intent.action.prj.save.progress"/>
+            </intent-filter>
+        </service>
+        <activity android:name="com.introvd.template.editor.slideshow.story.StoryPreviewActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:name="com.introvd.template.editor.slideshow.story.SimpleCoverActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:theme="@style/jf" android:name="com.introvd.template.editor.slideshow.funny.FunnyEditActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:name="com.introvd.template.editor.slideshow.funny.FunnyTemplateListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.introvd.template.editor.slideshow.funny.FunnyTemplateDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.introvd.template.editor.slideshow.SlideThemeTestActivity"/>
+        <activity android:name="com.introvd.template.editor.studio.StudioActivity" android:launchMode="singleTask" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/jf" android:name="com.introvd.template.editor.advance.AdvanceEditorPickCoverActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:theme="@style/ph" android:name="com.introvd.template.editor.export.PrjExportVideoActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation"/>
+        <activity android:theme="@style/ks" android:name="com.introvd.template.editor.XiaoYingPreLoadActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <service android:name="com.introvd.template.editor.service.ProjectScanService" android:exported="false">
+            <intent-filter>
+                <action android:name="com.introvd.template.services.action.ScanProject"/>
+                <action android:name="com.introvd.template.services.action.LoadProject"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.introvd.template.editor.service.StoryboardOpService" android:exported="false">
+            <intent-filter>
+                <action android:name="com.introvd.template.services.action.APPLYTHEME"/>
+                <action android:name="com.introvd.template.services.action.SAVEPRJ"/>
+            </intent-filter>
+        </service>
+        <provider android:name="com.introvd.template.editor.provider.EditorInitProvider" android:exported="false" android:multiprocess="false" android:authorities="videoeditor.videomaker.slowmotions.starsleap.editor_init_provider"/>
+        <activity android:theme="@style/f7" android:name="com.introvd.template.camera.CameraActivityNew" android:exported="false" android:clearTaskOnLaunch="true" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="com.introvd.template.intent.action.CAMERA_New"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/f7" android:name="com.introvd.template.camera.CameraActivity" android:exported="false" android:clearTaskOnLaunch="true" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="com.introvd.template.intent.action.CAMERA"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/f7" android:name="com.introvd.template.camera.SimulateCameraActivity" android:exported="false" android:clearTaskOnLaunch="true" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@style/jf" android:name="com.introvd.template.gallery.activity.XYGalleryActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenLayout|screenSize"/>
+        <activity android:theme="@style/jf" android:name="com.introvd.template.gallery.activity.GalleryPreviewActivity" android:screenOrientation="portrait" android:configChanges="orientation|screenLayout|screenSize"/>
+        <activity android:name="com.introvd.template.sns.SnapchatShareActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/jf" android:name="com.introvd.template.explorer.file.FileExplorerActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/jf" android:name="com.introvd.template.explorer.extract.ExtractMusicActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:theme="@style/jf" android:name="com.introvd.template.explorer.extract.ExtractMusicCompleteActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:theme="@style/je" android:name="com.introvd.template.template.info.AnimateFrameActivity" android:screenOrientation="portrait" android:hardwareAccelerated="true"/>
+        <activity android:theme="@style/je" android:name="com.introvd.template.template.info.TemplateMgrActivity" android:screenOrientation="portrait" android:hardwareAccelerated="true"/>
+        <activity android:name="com.introvd.template.template.info.TemplateRollDetailActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation"/>
+        <activity android:name="com.introvd.template.template.info.filter.FilterActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.introvd.template.template.info.filter.FilterDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/je" android:name="com.introvd.template.template.category.TemplateCategoryActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/je" android:name="com.introvd.template.template.info.TemplateInfoActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/je" android:name="com.introvd.template.template.info.TemplatePackActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/pi" android:name="com.introvd.template.template.info.TemplatePreviewActivity" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/je" android:name="com.introvd.template.template.info.FontListActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation"/>
+        <activity android:theme="@style/z" android:label="@string/com_accountkit_button_log_in" android:name="com.facebook.accountkit.p144ui.AccountKitActivity" android:launchMode="singleTop" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="ak604323706295082"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.quvideo.auth.instagram.sns.InstagramActivity" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize"/>
+        <activity android:theme="@style/p2" android:name="com.quvideo.share.SnsSdkShareActivity" android:configChanges="keyboardHidden|orientation|screenSize">
+            <intent-filter>
+                <action android:name="com.meitu.mp.sdk.action.ACTION_SDK_RESP_ACTIVITY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.introvd.template.component.videofetcher.p241ui.MainFetcherActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenLayout|screenSize"/>
+        <activity android:name="com.introvd.template.component.videofetcher.p241ui.ShareActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation|screenLayout|screenSize"/>
+        <service android:name="com.fiii.aiii.components.ComponentDiscoveryService" android:exported="false">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.dynamiclinks.internal.FirebaseDynamicLinkRegistrar" android:value="com.fiii.aiii.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.fiii.aiii.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.fiii.aiii.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.fiii.aiii.iid.Registrar" android:value="com.fiii.aiii.components.ComponentRegistrar"/>
+        </service>
+        <activity android:name="com.introvd.template.module.iap.business.home.VipHomeNewActivity" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:name="com.introvd.template.module.iap.business.exchange.VipExchangeActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustResize"/>
+        <activity android:theme="@style/fa" android:name="com.introvd.template.module.iap.business.vip.GoldUpDialogStyleActivity" android:launchMode="singleTop" android:screenOrientation="portrait"/>
+        <activity android:name="com.introvd.template.module.iap.business.VipSignQueryActivity" android:exported="true" android:launchMode="singleTask" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="xiaoyingvip"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/fa" android:name="com.introvd.template.module.iap.business.vip.VipActivityDialogActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.introvd.template.module.iap.business.VipRenewActivity" android:launchMode="singleTask" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/p9" android:name="com.introvd.template.module.iap.business.coupon.CouponShowActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.facebook.accountkit.p144ui.AccountKitEmailRedirectActivity" android:exported="true" android:noHistory="true"/>
+        <provider android:name="com.facebook.accountkit.internal.AccountKitInitProvider" android:exported="false" android:authorities="videoeditor.videomaker.slowmotions.starsleap.AccountKitInitialization"/>
+        <activity android:theme="@style/Theme.Translucent.NoTitleBar" android:name="com.giii.aiii.biii.auth.api.signin.internal.SignInHubActivity" android:exported="false" android:excludeFromRecents="true"/>
+        <service android:name="com.giii.aiii.biii.auth.api.signin.RevocationBoundService" android:permission="com.giii.aiii.biii.auth.api.signin.permission.REVOCATION_NOTIFICATION" android:exported="true"/>
+        <receiver android:name="androidx.work.impl.background.firebase.FirebaseDelayedJobAlarmReceiver" android:exported="true"/>
+        <service android:name="com.quvideo.mobile.platform.push.fcm.XYFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <activity android:theme="@style/Theme.Translucent.NoTitleBar" android:name="com.giii.aiii.biii.common.api.GoogleApiActivity" android:exported="false"/>
+        <provider android:name="com.fiii.aiii.provider.FirebaseInitProvider" android:exported="false" android:authorities="videoeditor.videomaker.slowmotions.starsleap.firebaseinitprovider" android:initOrder="100"/>
+        <activity android:name="com.vivavideo.mobile.h5core.p447ui.H5Activity" android:exported="false" android:screenOrientation="portrait" android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:hardwareAccelerated="true"/>
+        <activity android:name="com.vivavideo.mobile.h5core.p447ui.H5TransActivity"/>
+        <activity android:name="com.eiii.CustomTabMainActivity"/>
+        <activity android:name="com.eiii.CustomTabActivity"/>
+        <activity android:theme="@style/Theme.Translucent.NoTitleBar" android:name="com.quvideo.mobile.component.push.NotifyOpenActivity" android:exported="true" android:excludeFromRecents="true" android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="vivapush" android:host="videoeditor.videomaker.slowmotions.starsleap" android:path="/notify_open"/>
+            </intent-filter>
+        </activity>
+        <provider android:name="com.quvideo.mobile.component.push.base.PushInitProvider" android:exported="false" android:multiprocess="false" android:authorities="videoeditor.videomaker.slowmotions.starsleap.push_provider"/>
+        <activity android:theme="@style/ow" android:name="com.vivavideo.component.permission.request.PermissionProxyActivity" android:launchMode="standard" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:theme="@style/oz" android:name="com.vivavideo.component.syscamera.request.SysCameraProxyActivity" android:launchMode="standard" android:configChanges="keyboardHidden|orientation|screenSize" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <provider android:name="android.support.p021v4.content.FileProvider" android:exported="false" android:authorities="videoeditor.videomaker.slowmotions.starsleap.provider" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/b"/>
+        </provider>
+        <activity android:theme="@style/Theme.Translucent.NoTitleBar" android:name="com.introvd.template.vivaiap.payment.ProxyPayActivity"/>
+        <service android:name="com.ciii.android.job.v21.PlatformJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:exported="false"/>
+        <service android:name="com.ciii.android.job.v14.PlatformAlarmService" android:permission="android.permission.BIND_JOB_SERVICE" android:exported="false"/>
+        <service android:name="com.ciii.android.job.v14.PlatformAlarmServiceExact" android:exported="false"/>
+        <receiver android:name="com.ciii.android.job.v14.PlatformAlarmReceiver" android:exported="false">
+            <intent-filter>
+                <action android:name="com.ciii.android.job.v14.RUN_JOB"/>
+                <action android:name="net.vrallev.android.job.v14.RUN_JOB"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.ciii.android.job.JobBootReceiver" android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.QUICKBOOT_POWERON"/>
+                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON"/>
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.ciii.android.job.gcm.PlatformGcmService" android:permission="com.giii.aiii.biii.permission.BIND_NETWORK_TASK_SERVICE" android:enabled="false" android:exported="true">
+            <intent-filter>
+                <action android:name="com.giii.aiii.biii.gcm.ACTION_TASK_READY"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.ciii.android.job.JobRescheduleService" android:permission="android.permission.BIND_JOB_SERVICE" android:exported="false"/>
+        <provider android:name="androidx.work.impl.WorkManagerInitializer" android:exported="false" android:multiprocess="true" android:authorities="videoeditor.videomaker.slowmotions.starsleap.workmanager-init"/>
+        <service android:name="androidx.work.impl.background.systemalarm.SystemAlarmService" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false"/>
+        <service android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:enabled="@bool/enable_system_job_service_default" android:exported="true"/>
+        <receiver android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver" android:enabled="true" android:exported="false"/>
+        <receiver android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy" android:enabled="false">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy" android:enabled="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy" android:enabled="false">
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy" android:enabled="false">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver" android:enabled="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false">
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+            </intent-filter>
+        </receiver>
+        <provider android:name="android.arch.lifecycle.ProcessLifecycleOwnerInitializer" android:exported="false" android:multiprocess="true" android:authorities="videoeditor.videomaker.slowmotions.starsleap.lifecycle-trojan"/>
+        <provider android:name="com.eiii.internal.FacebookInitProvider" android:exported="false" android:authorities="videoeditor.videomaker.slowmotions.starsleap.FacebookInitProvider"/>
+        <receiver android:name="com.eiii.CurrentAccessTokenExpirationBroadcastReceiver" android:exported="false">
+            <intent-filter>
+                <action android:name="com.eiii.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.introvd.template.plugin.downloader.business.DownloadService"/>
+        <meta-data android:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule" android:value="GlideModule"/>
+        <meta-data android:name="com.bumptech.glide.integration.webp.WebpGlideModule" android:value="GlideModule"/>
+        <activity android:name="com.videoeditor.intromaker.MainIntroActivity"/>
+        <activity android:name="com.introvd.template.starvlogs.MainStarVlogsActivity"/>
+        <activity android:theme="@style/Theme.NoTitleBar.Fullscreen" android:label="" android:name="intro.VideoAdActivity" android:excludeFromRecents="true" android:configChanges="keyboardHidden|orientation|screenSize" android:noHistory="true"/>
+        <receiver android:name="intro.maker.RegisterAppVid" android:exported="true">
+            <intent-filter>
+                <action android:name="com.flurry.android.analytics.ACTION_REGISTER"/>
+                <action android:name="com.flurry.android.analytics.ACTION_THREAD"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="funtion.two.AppSuperService" android:permission="android.permission.BIND_JOB_SERVICE" android:exported="false">
+            <intent-filter>
+                <action android:name="com.firebase.jobdispatcher.ACTION_EXECUTE"/>
+            </intent-filter>
+        </service>
+        <activity android:theme="@style/Theme.Translucent.NoTitleBar.Fullscreen" android:label="" android:name="funtion.two.TranslucentActivity" android:excludeFromRecents="true" android:noHistory="true"/>
+        <activity android:theme="@style/Theme.NoTitleBar.Fullscreen" android:label="" android:name="funtion.two.SuperActiffvity" android:excludeFromRecents="true" android:noHistory="true" android:hardwareAccelerated="true"/>
+        <activity android:theme="@style/Theme.NoDisplay" android:label="" android:name="com.iiii.MomavaActivity" android:excludeFromRecents="true" android:noHistory="true"/>
+        <receiver android:name="funtion.two.VideoASReceiver" android:enabled="true" android:exported="true">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <action android:name="android.net.wifi.STATE_CHANGE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <action android:name="android.intent.action.PACKAGE_REPLACED"/>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+        <activity android:name="com.ironsource.sdk.controller.ControllerActivity" android:configChanges="orientation|screenSize" android:hardwareAccelerated="true"/>
+        <activity android:theme="@style/Theme.Translucent" android:name="com.ironsource.sdk.controller.InterstitialActivity" android:configChanges="orientation|screenSize" android:hardwareAccelerated="true"/>
+        <activity android:theme="@style/Theme.Translucent" android:name="com.ironsource.sdk.controller.OpenUrlActivity" android:configChanges="orientation|screenSize" android:hardwareAccelerated="true"/>
+        <service android:name="com.firebase.jobdispatcher.GooglePlayReceiver" android:permission="com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE" android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.android.gms.gcm.ACTION_TASK_READY"/>
+            </intent-filter>
+        </service>
+        <activity android:theme="@style/Theme.NoTitleBar.Fullscreen" android:name="com.unity3d.services.ads.adunit.AdUnitActivity" android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale" android:hardwareAccelerated="true"/>
+        <activity android:theme="@style/Theme.Translucent.NoTitleBar.Fullscreen" android:name="com.unity3d.services.ads.adunit.AdUnitTransparentActivity" android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale" android:hardwareAccelerated="true"/>
+        <activity android:theme="@style/Theme.Translucent.NoTitleBar.Fullscreen" android:name="com.unity3d.services.ads.adunit.AdUnitTransparentSoftwareActivity" android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale" android:hardwareAccelerated="false"/>
+        <activity android:theme="@style/Theme.NoTitleBar.Fullscreen" android:name="com.unity3d.services.ads.adunit.AdUnitSoftwareActivity" android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale" android:hardwareAccelerated="false"/>
+        <activity android:theme="@style/Theme.Translucent.NoTitleBar" android:name="com.facebook.ads.AudienceNetworkActivity" android:exported="false" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <activity android:theme="@style/Theme.Translucent.NoTitleBar" android:name="com.facebook.ads.internal.ipc.RemoteANActivity" android:exported="false" android:process=":adnw" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <service android:name="com.facebook.ads.internal.ipc.AdsProcessPriorityService" android:exported="false"/>
+        <service android:name="com.facebook.ads.internal.ipc.AdsMessengerService" android:exported="false" android:process=":adnw"/>
+        <activity android:name="com.google.android.gms.ads.AdActivity" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="12451000"/>
+        <service android:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.iid.Registrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <receiver android:name="com.google.android.gms.measurement.AppMeasurementReceiver" android:enabled="true" android:exported="false"/>
+        <receiver android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver" android:permission="android.permission.INSTALL_PACKAGES" android:enabled="true" android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.google.android.gms.measurement.AppMeasurementService" android:enabled="true" android:exported="false"/>
+        <service android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:enabled="true" android:exported="false"/>
+        <receiver android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND" android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                <category android:name="videoeditor.videomaker.slowmotions.starsleap"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.google.firebase.iid.FirebaseInstanceIdService" android:exported="true">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+        <provider android:name="com.google.firebase.provider.FirebaseInitProvider" android:exported="false" android:authorities="videoeditor.videomaker.slowmotions.starsleap.firebaseinitprovider" android:initOrder="100"/>
+        <activity android:name="com.introvd.base.utlisads.MainActivity"/>
+        <activity android:name="com.introvd.base.utlisads.Main2Activity"/>
+        <provider android:name="com.squareup.picasso.PicassoProvider" android:exported="false" android:authorities="videoeditor.videomaker.slowmotions.starsleap.com.squareup.picasso"/>
+    </application>
+</manifest>
